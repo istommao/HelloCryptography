@@ -58,6 +58,11 @@
   margin: 0 auto;
 }
 
+.md-nav {
+    font-size: .8rem;
+    line-height: 1.4
+}
+
 /* font-family setting for Win10 */
 body {
   --md-text-font-family: -apple-system,BlinkMacSystemFont,var(--md-text-font,_),Helvetica,Arial,sans-serif;

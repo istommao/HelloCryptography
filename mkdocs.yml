@@ -114,10 +114,10 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-# extra_javascript:
-#   - javascripts/mathjax.js
+extra_javascript:
+  # - javascripts/mathjax.js
 #   - https://polyfill.io/v3/polyfill.min.js?features=es6
-#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
   - stylesheets/extra.css
 
@@ -142,8 +142,11 @@ nav:
     - ChaCha20: symmetric/chacha20.md
     - Salsa20: symmetric/salsa20.md
   - 非对称密码学:
+    - 概览: asymmetric/index.md
     - RSA: asymmetric/rsa.md
+    - X25519: asymmetric/x25519.md
     - Ed25519: asymmetric/ed25519.md
+    - Curve25519: asymmetric/curve25519.md
   - 学习资源:
     - 📚 密码学书籍: resource/book.md
     - 🎬 密码学视频: resource/video.md
