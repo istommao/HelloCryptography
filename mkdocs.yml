@@ -67,8 +67,8 @@ extra:
   social:
     - icon: fontawesome/brands/github 
       link: https://github.com/istommao
-    - icon: fontawesome/brands/twitter 
-      link: https://twitter.com/istommao
+    # - icon: fontawesome/brands/twitter 
+    #   link: https://twitter.com/istommao
     # - icon: fontawesome/solid/code 
     #   link: https://leetcode.cn/u/jyd/
   generator: false
@@ -129,4 +129,8 @@ nav:
     # - 编程环境安装: chapter_preface/installation.md
     # - 一起参与创作: chapter_preface/contribution.md
   - 密码学简介: 
-    - 密码学历史: chapter_data_structure/data_and_memory.md
+    - 密码学历史: chapter_preface/about_the_book.md
+  - 对称密码学:
+    - AES: symmetric/aes.md
+  - 非对称密码学:
+    - Ed25519: asymmetric/ed25519.md
