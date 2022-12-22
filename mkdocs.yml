@@ -114,10 +114,10 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-extra_javascript:
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+# extra_javascript:
+#   - javascripts/mathjax.js
+#   - https://polyfill.io/v3/polyfill.min.js?features=es6
+#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
   - stylesheets/extra.css
 
@@ -130,6 +130,8 @@ nav:
     # - 一起参与创作: chapter_preface/contribution.md
   - 密码学简介: 
     - 密码学历史: chapter_preface/history.md
+    - 古典密码学: chapter_preface/classic.md
+    - 现代密码学: chapter_preface/modern.md
   - 随机数:
     - 概览: random_numbers/intro.md
   - Hash算法:
@@ -142,3 +144,6 @@ nav:
   - 非对称密码学:
     - RSA: asymmetric/rsa.md
     - Ed25519: asymmetric/ed25519.md
+  - 学习资源:
+    - 📚 密码学书籍: resource/book.md
+    - 🎬 密码学视频: resource/video.md
