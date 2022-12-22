@@ -130,7 +130,11 @@ nav:
     # - 一起参与创作: chapter_preface/contribution.md
   - 密码学简介: 
     - 密码学历史: chapter_preface/about_the_book.md
+  - Hash算法:
+    - 概览: hashing/index.md
+    - MD5: hashing/md5.md
   - 对称密码学:
     - AES: symmetric/aes.md
   - 非对称密码学:
+    - RSA: asymmetric/rsa.md
     - Ed25519: asymmetric/ed25519.md

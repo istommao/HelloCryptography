@@ -1,6 +1,46 @@
 # 对称密码学 - AES
 
 
+=== "JavaScript"
+
+    ```js
+    const StringToArrayBuffer = (str: string) => {
+      let buf = new ArrayBuffer(str.length);
+      let bufView = new Uint8Array(buf);
+      for (var i = 0, strLen = str.length; i < strLen; i++) {
+        bufView[i] = str.charCodeAt(i);
+      }
+      return buf;
+    };
+
+    const ImportSecretKey = async (rawKey: any, aesName: string) => {
+      return await window.crypto.subtle.importKey('raw', rawKey, aesName, true, ['encrypt', 'decrypt']);
+    };
+
+    const AesEncrypt = async (
+      aesName: string,
+      keyStr: string,
+      keySize: number,
+      iv: string,
+      encoded: Uint8Array,
+    ) => {
+      const alg = {
+        name: aesName,
+        iv: StringToArrayBuffer(atob(iv)),
+        length: keySize,
+      };
+      let key = await ImportSecretKey(StringToArrayBuffer(atob(keyStr)), aesName);
+      let result = await window.crypto.subtle.encrypt(alg, key, encoded);
+      return result;
+    };
+
+
+    const AesGCMEncrypt = async (keyStr: string, iv: string, inputByteData: Uint8Array) => {
+        const keySize = 256;
+        return await aesEncrypt('AES-GCM', keyStr, keySize, iv, inputByteData);
+    };
+    ```
+
 
 === "Python"
 
@@ -73,12 +113,6 @@
     byte_data = aes.gcm_encrypt("hello".encode("utf-8"))
 
     text = aes.gcm_decrypt(byte_data)
-    ```
-
-=== "JavaScript"
-
-    ```bash
-    npm install cryptography
     ```
 
 === "Golang"
