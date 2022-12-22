@@ -135,6 +135,8 @@ nav:
     - MD5: hashing/md5.md
   - 对称密码学:
     - AES: symmetric/aes.md
+    - ChaCha20: symmetric/chacha20.md
+    - Salsa20: symmetric/salsa20.md
   - 非对称密码学:
     - RSA: asymmetric/rsa.md
     - Ed25519: asymmetric/ed25519.md
