@@ -14,7 +14,7 @@ copyright: Copyright &copy; 2022 istommao
 # Configuration
 theme:
   name: material
-  # custom_dir: docs/overrides
+  custom_dir: docs/overrides
   language: zh
   features:
     # - announce.dismiss
@@ -129,7 +129,7 @@ nav:
     # - 编程环境安装: chapter_preface/installation.md
     # - 一起参与创作: chapter_preface/contribution.md
   - 密码学简介: 
-    - 密码学历史: chapter_preface/about_the_book.md
+    - 密码学历史: chapter_preface/history.md
   - 随机数:
     - 概览: random_numbers/intro.md
   - Hash算法:
