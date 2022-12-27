@@ -7,7 +7,7 @@ Hello Cryptography
 🚧 施工中...
 
 
-![screenshot]("./assets/screenshot.png")
+![screenshot]("/assets/screenshot.png")
 
 
 ## License
