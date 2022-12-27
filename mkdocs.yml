@@ -138,17 +138,24 @@ nav:
   - Hash算法:
     - 概览: hashing/index.md
     - MD5: hashing/md5.md
+    - SHA: hashing/sha.md
+    - RIPEMD: hashing/ripemd.md
   - 对称密码学:
     - 概览: symmetric/index.md
-    - AES: symmetric/aes.md
+    - AES:
+      - 什么AES: symmetric/aes.md
+      - 代码: symmetric/aes_code.md
     - ChaCha20: symmetric/chacha20.md
+    - XChaCha20: symmetric/xchacha20.md
     - Salsa20: symmetric/salsa20.md
+    - XSalsa20: symmetric/xsalsa20.md
   - 非对称密码学:
     - 概览: asymmetric/index.md
     - RSA: asymmetric/rsa.md
-    - X25519: asymmetric/x25519.md
-    - Ed25519: asymmetric/ed25519.md
-    - Curve25519: asymmetric/curve25519.md
+    - X25519/Ed25519:
+      - X25519: asymmetric/x25519.md
+      - Ed25519: asymmetric/ed25519.md
+      - Curve25519: asymmetric/curve25519.md
   - 学习资源:
     - 📚 密码学书籍: resource/book.md
     - 🎬 密码学视频: resource/video.md
