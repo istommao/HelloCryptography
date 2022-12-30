@@ -142,6 +142,7 @@ nav:
     - RIPEMD: hashing/ripemd.md
   - 对称密码学:
     - 概览: symmetric/index.md
+    - 前言: symmetric/preface.md
     - AES:
       - 什么AES: symmetric/aes.md
       - 代码: symmetric/aes_code.md
