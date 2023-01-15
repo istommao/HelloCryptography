@@ -115,6 +115,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra_javascript:
+  - stylesheets/baidu.js
   # - javascripts/mathjax.js
 #   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -158,7 +159,6 @@ nav:
     - X25519/Ed25519:
       - X25519: asymmetric/x25519.md
       - Ed25519: asymmetric/ed25519.md
-      - Curve25519: asymmetric/curve25519.md
   - 混合密码学:
     - 概览: hybrid/index.md
     - HKDF: hybrid/hkdf.md
